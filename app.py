@@ -24,7 +24,7 @@ if not df.empty:
 
     # Edge-based filtering
     edge_cutoff = st.slider("Minimum Model Edge (%)", 0, 100, 10)
-    filtered_df = df[df['model_edge'] > edge_cutoff]
+    filtered_df = df[df['Model Edge %'] > edge_cutoff]
 
     st.subheader("📈 Top Value Plays")
     st.dataframe(filtered_df)
